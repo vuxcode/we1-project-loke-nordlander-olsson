@@ -4,5 +4,8 @@
 
 For example: 
 
-- 2021-10-15 18:00 Worked for 1 hour. I have done:
-  - *List the things you have done.*
+- 2021-10-20 13:33 Worked for 1 hour and 40 minutes. I have done:
+  - Sidebar
+  - Top with logo
+  - Choice of font
+  - Worked on the style of the website
