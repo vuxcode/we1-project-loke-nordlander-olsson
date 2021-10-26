@@ -7,6 +7,8 @@ Project Instructions: https://vuxcode.netlify.app/we1/lessons/major-project-brie
 
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
+10/26 - I'm having issues with making the website responsive, I don't fully understand how to make it work.
+
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here.
