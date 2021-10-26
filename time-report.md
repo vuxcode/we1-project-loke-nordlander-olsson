@@ -9,3 +9,8 @@ For example:
   - Top with logo
   - Choice of font
   - Worked on the style of the website
+
+- 2020-10-26 20:24 Worked for 1 hour and 10 minutes. I have done:
+  - Added second page
+  - Worked on making the webpage responsive by finding out more information on the internet, unsuccessful
+  - Added links between the pages
