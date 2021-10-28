@@ -15,6 +15,7 @@ For example:
   - Worked on making the webpage responsive by finding out more information on the internet, unsuccessful
   - Added links between the pages
 
-- 2021-10-28 13:57 Worked for 1 hour and 15 minutes. I have done:
+- 2021-10-28 13:57 Worked for 2 hours and 5 minutes. I have done:
   - Added text, image and video to second page
   - Adjusted the stylesheet a bit
+  - Made the site more responsive, still trouble with images like the logo and their borders
