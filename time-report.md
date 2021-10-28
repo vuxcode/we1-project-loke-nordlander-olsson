@@ -10,7 +10,11 @@ For example:
   - Choice of font
   - Worked on the style of the website
 
-- 2020-10-26 20:24 Worked for 1 hour and 10 minutes. I have done:
+- 2021-10-26 20:24 Worked for 1 hour and 10 minutes. I have done:
   - Added second page
   - Worked on making the webpage responsive by finding out more information on the internet, unsuccessful
   - Added links between the pages
+
+- 2021-10-28 13:57 Worked for 1 hour and 15 minutes. I have done:
+  - Added text, image and video to second page
+  - Adjusted the stylesheet a bit
