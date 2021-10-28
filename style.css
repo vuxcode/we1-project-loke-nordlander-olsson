@@ -6,13 +6,6 @@
 
 html {
 	background-color: #f3e5ab;
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	width: 100%;
-	height: 100%;
 }
 
 .top {
@@ -20,6 +13,7 @@ body {
 	border-bottom: ridge;
 	border-width: 3px;
 	border-color: black;
+	width: 100vw;
 }
 .logo {
 	padding: 5px;
@@ -37,7 +31,7 @@ body {
 .sidebar {
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	height: 150vh;
 	width: 200px;
 	background-color: #E58282;
 	overflow: auto;
@@ -94,5 +88,26 @@ h2 {
 }
 
 p {
-	font-size: 27px;
+	font-size: 120%;
+}
+
+img {
+	max-width: 100%;
+	min-width: 10%;
+}
+
+.menu {
+	margin-left: auto;
+	margin-right: auto;
+	border-style: dotted;
+	display: inline-block;
+	width: 40%;
+}
+
+video {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	display: inline;
+	position: relative;
 }
