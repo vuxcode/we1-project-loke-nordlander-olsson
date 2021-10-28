@@ -9,6 +9,8 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 10/26 - I'm having issues with making the website responsive, I don't fully understand how to make it work.
 
+10/28 - So far so good, still having to iron out some problems but I can always ask during class about elements and their sizes. Responsive design is easier after having read through a few lines of tutorials.
+
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here.
