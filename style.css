@@ -6,55 +6,53 @@
 
 html {
 	background-color: #f3e5ab;
+	height: 100vh;
 }
 
 .top {
 	background-color: #89CFF0;
 	border-bottom: ridge;
-	border-width: 3px;
+	border-width: 0.3vw;
 	border-color: black;
 	width: 100vw;
 }
 .logo {
-	padding: 5px;
+	padding: 0.5vw;
 	display: inline-block;
 }
 
 .pageInfo {
 	display: inline-block;
-	font-size: 20px;
 	text-decoration: underline;
-	margin-left: 5px;
-	margin-bottom: 5px;
+	margin-left: 0.5vw;
+	margin-bottom: 0.5vw;
 }
 
 .sidebar {
-	margin: 0;
-	padding: 0;
-	height: 150vh;
-	width: 200px;
+	height: 100%;
+	width: 13vw;
 	background-color: #E58282;
 	overflow: auto;
 	position: absolute;
 	border-right: ridge;
-	border-width: 5px;
+	border-width: 0.3vw;
 	border-color: black;
 }
 
 .buttons {
-	margin-top: 5px;
-	margin-left: 10px;
+	margin-top: 0.5vw;
+	margin-left: 0.7vw;
 	display: block;
 }
 
 button {
-	font-size: 30px;
-	margin-top: 5px;
-	padding: 8px;
-	border-radius: 20px;
+	font-size: 2vw;
+	margin-top: 0.5vw;
+	padding: 0.5vw;
+	border-radius: 1vw;
 	background-color: #89CFF0;
 	border-style: double;
-	border-width: 7px;
+	border-width: 0.5vw;
 	cursor: pointer;
 }
 
@@ -72,28 +70,23 @@ button:active {
 }
 
 .article {
-	margin-left: 210px;
-	margin-top: 5px;
+	margin-left: 14vw;
+	margin-top: 0.5vw;
 	border-style: ridge;
-	padding: 5px;
+	padding: 0.5vw;
 	display: inline-block;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 4vw;
 }
 
 h2 {
-	font-size: 35px;
+	font-size: 2.5vw;
 }
 
 p {
-	font-size: 120%;
-}
-
-img {
-	max-width: 100%;
-	min-width: 10%;
+	font-size: 1.5vw;
 }
 
 .menu {
@@ -104,10 +97,17 @@ img {
 	width: 40%;
 }
 
+img {
+	width: 100%;
+}
+
 video {
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
+	width: 47vw;
 	display: inline;
-	position: relative;
+}
+
+.logo {
+	width: 17vw;
 }
