@@ -19,3 +19,9 @@ For example:
   - Added text, image and video to second page
   - Adjusted the stylesheet a bit
   - Made the site more responsive, still trouble with images like the logo and their borders
+
+- 2021-11-03 20:14 Worked for 1 hour and 15 minutes. I have done:
+  - Worked on adding contact page
+  - Added a form
+  - Added my Formspree to action in the form
+  - Worked on the style of the contact page
