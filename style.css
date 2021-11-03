@@ -111,3 +111,48 @@ video {
 .logo {
 	width: 17vw;
 }
+
+legend {
+	font-size: 2.5vw;
+}
+
+fieldset {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+label {
+	display: block;
+	margin-left: 1vw;
+}
+
+textarea {
+	width: 60vw;
+}
+
+form {
+	padding: 1vw;
+	background-color: navajowhite;
+}
+
+#submit {
+	font-size: 1.5vw;
+	padding: 0.5vw;
+	margin-top: 0.2vw;
+	border-radius: 1vw;
+	border-style: double;
+	border-width: 0.5vw;
+	color: black;
+	background-color: #89CFF0;
+}
+
+#text, #email {
+	margin-left: 1vw;
+	border-style: double;
+	border-width: 0.4vw;
+	border-color: #E58282;
+}
+
+#email {
+	margin-bottom: 1vw;
+}

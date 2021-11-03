@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Which page you're on -->
+	<title>Information</title>
+	<!-- Font gathered from Google fonts -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Div for elements on the top of the page -->
+	<div class="top">
+		<div class="logo">
+			<img src="logo.png" alt="logo.png">
+		</div>
+		<div class="pageInfo">
+			<h1>Contact us</h1>
+		</div>
+	</div>
+	<!-- Div for elements in the sidebar, buttons -->
+	<div class="sidebar">
+		<div class="buttons">
+			<a href="index.html">
+				<button>Home</button>
+			</a>
+			<a href="information.html">
+				<button>Information</button>
+			</a>
+			<a href="#">
+				<button>Contact Us</button>
+			</a>
+		</div>
+	</div>
+	<div class="article">
+		<h2>Below is a form you can fill in that will be sent to one of our representatives</h2>
+		<form action="https://formspree.io/f/mgerjzkl" method="POST">
+			<fieldset>
+				<legend>Contact us</legend>
+				<label for="text"><u>Reason for contacting us:</u></label>
+				<textarea id="text" name="text" rows="5"></textarea>
+				<label for="email"><u>Your email...</u></label>
+				<input id="email" type="email" name="email">
+			</fieldset>
+			<input id="submit" type="submit" value="Send">
+		</form>
+	</div>
+</body>
+</html>
