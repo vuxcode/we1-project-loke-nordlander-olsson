@@ -25,3 +25,5 @@ For example:
   - Added a form
   - Added my Formspree to action in the form
   - Worked on the style of the contact page
+
+Total time: 6 hours and 10 minutes
