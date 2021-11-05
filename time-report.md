@@ -26,4 +26,10 @@ For example:
   - Added my Formspree to action in the form
   - Worked on the style of the contact page
 
-Total time: 6 hours and 10 minutes
+- 2021-11-05 21:18 Worked for 1 hour and 30 minutes. I have done:
+  - Updated images
+  - Added a map iframe to information page
+  - Fixed images not displaying correctly and neatly positioned them with a new one
+  - Added zoom to the menu
+
+Total time: 7 hours and 40 minutes
