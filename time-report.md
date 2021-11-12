@@ -31,5 +31,9 @@ For example:
   - Added a map iframe to information page
   - Fixed images not displaying correctly and neatly positioned them with a new one
   - Added zoom to the menu
+ 
+ - 2021-11-12 16:19 Worked for 1 hour. I have done:
+  - I don't even know what, trying to follow the fixes Linus sent me but does not work at all
+  - Everything that gets changed just screws it up
 
-Total time: 7 hours and 40 minutes
+Total time: 8 hours and 40 minutes
