@@ -4,9 +4,9 @@
 	font-family: 'Pacifico', cursive;
 }
 
-html {
+body {
 	background-color: #f3e5ab;
-	height: 100vh;
+	overflow: hidden;
 }
 
 .top {
@@ -75,6 +75,9 @@ button:active {
 	border-style: ridge;
 	padding: 0.5vw;
 	display: inline-block;
+	width: auto;
+	overflow-y: scroll;
+	height: auto;
 }
 
 h1 {
