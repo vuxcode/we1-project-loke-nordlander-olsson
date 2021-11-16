@@ -32,8 +32,11 @@ For example:
   - Fixed images not displaying correctly and neatly positioned them with a new one
   - Added zoom to the menu
  
- - 2021-11-12 16:19 Worked for 1 hour. I have done:
+- 2021-11-12 16:19 Worked for 1 hour. I have done:
   - I don't even know what, trying to follow the fixes Linus sent me but does not work at all
   - Everything that gets changed just screws it up
 
-Total time: 8 hours and 40 minutes
+- 2021-11-16 22:26 Worked for 30 minutes. I have done:
+  - Tried to fix with the reference Linus sent, don't understand a single thing about it.
+
+Total time: 9 hours and 10 minutes
