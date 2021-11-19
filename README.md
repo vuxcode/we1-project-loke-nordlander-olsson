@@ -13,6 +13,8 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 11/12 - And it all comes crushing down, I can't fix it at all. How in the Hell is anything logic?
 
+11/19 - It's frustrating to even try changing anything as the vision of the website gets worse and worse. I'm just frustrated with it.
+
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here.
