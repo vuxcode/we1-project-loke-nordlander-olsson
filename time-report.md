@@ -39,4 +39,8 @@ For example:
 - 2021-11-16 22:26 Worked for 30 minutes. I have done:
   - Tried to fix with the reference Linus sent, don't understand a single thing about it.
 
-Total time: 9 hours and 10 minutes
+- 2021-11-19 20:34 Worked for 30 minutes. I have done:
+  - Not a single thing worth mentioning, tried to find information on how to fix it but not a single sliver of information helps me.
+  - Changed some things to see if it works.
+
+Total time: 9 hours and 40 minutes
