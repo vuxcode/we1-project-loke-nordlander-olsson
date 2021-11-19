@@ -6,7 +6,6 @@
 
 body {
 	background-color: #f3e5ab;
-	overflow: hidden;
 }
 
 .top {
@@ -14,7 +13,7 @@ body {
 	border-bottom: ridge;
 	border-width: 4px;
 	border-color: black;
-	width: 100vw;
+	width: 100%;
 }
 .logo {
 	padding: 10px;
@@ -33,13 +32,12 @@ body {
 	height: 100%;
 	width: 13vw;
 	background-color: #E58282;
-	overflow: auto;
 	position: absolute;
 	border-right: ridge;
 	border-width: 3px;
-	border-color: black;
-	border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 23px;
 	border-bottom: ridge;
+	border-color: black;
 }
 
 .buttons {
@@ -78,9 +76,7 @@ button:active {
 	border-style: ridge;
 	padding: 0.5vw;
 	display: inline-block;
-	width: auto;
-	overflow-y: scroll;
-	height: auto;
+	width: 63vw;
 }
 
 h1 {
