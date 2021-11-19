@@ -13,7 +13,7 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 11/12 - And it all comes crushing down, I can't fix it at all. How in the Hell is anything logic?
 
-11/19 - It's frustrating to even try changing anything as the vision of the website gets worse and worse. I'm just frustrated with it. I don't believe I can continue until the issue has been fixed.
+11/19 - It's frustrating to even try changing anything as the vision of the website gets worse and worse. I'm just frustrated with it. I don't believe I can continue until the issue has been fixed. It just gives me anxiety.
 
 # Project Summary
 
