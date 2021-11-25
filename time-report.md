@@ -43,4 +43,9 @@ For example:
   - Not a single thing worth mentioning, tried to find information on how to fix it but not a single sliver of information helps me.
   - Changed some things to see if it works.
 
-Total time: 9 hours and 40 minutes
+- 2021-11-25 03:19 Worked for 1 hour and 30 minutes. I have done:
+  - Added sound to when you hover over the sidebar buttons, in case you have bad eyesight or dyslexia
+  - Added functions that correlate to the onmouseover for buttons
+  - Added more comments to places where it was missing
+  - 
+Total time: 11 hours and 10 minutes
