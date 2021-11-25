@@ -21,31 +21,72 @@
 		</div>
 	</div>
 	<!-- Div for elements in the sidebar, buttons -->
+	<!-- onmousover triggers a function that plays a sound -->
 	<div class="sidebar">
 		<div class="buttons">
 			<a href="index.html">
-				<button>Home</button>
+				<button onmouseover="playHomeAudio()">Home</button>
+				<audio id="home" preload="auto">
+					<source src="home.mp3">
+				</audio>
 			</a>
 			<a href="information.html">
-				<button>Information</button>
+				<button onmouseover="playInformationAudio()">Information</button>
+				<audio id="information">
+					<source src="information.mp3">
+				</audio>
 			</a>
 			<a href="#">
-				<button>Contact Us</button>
+				<button onmouseover="playContactAudio()">Contact Us</button>
+				<audio id="contact" preload="auto">
+					<source src="contact.mp3">
+				</audio>
 			</a>
 		</div>
 	</div>
 	<div class="article">
 		<h2>Below is a form you can fill in that will be sent to one of our representatives</h2>
+		<!-- Below is a form that is linked to a service -->
+		<!-- Clicking send will send your input to the service and respectively an email -->
 		<form action="https://formspree.io/f/mgerjzkl" method="POST">
 			<fieldset>
+				<!-- Text at the top of the form, description -->
 				<legend>Contact us</legend>
+				<!-- A label for the textarea below -->
 				<label for="text"><u>Reason for contacting us:</u></label>
+				<!-- Textarea where you input the reason for contacting
+				It has 5 rows of text -->
 				<textarea id="text" name="text" rows="5"></textarea>
+				<!-- A label for the email area-->
 				<label for="email"><u>Your email...</u></label>
+				<!-- Element where you input your email -->
 				<input id="email" type="email" name="email">
 			</fieldset>
+			<!-- This element/button will send the email through the service provider -->
 			<input id="submit" type="submit" value="Send">
 		</form>
 	</div>
+	<script type="text/javascript">
+		//Finds and sets this variable to the assigned id
+		var homeAudio = document.querySelector("#home");
+		//Lowers the audio by 25%
+		homeAudio.volume = 0.55;
+		//Function that plays the sound
+		function playHomeAudio() {
+			homeAudio.play();
+		}
+		//Same as above
+		var informationAudio = document.querySelector("#information");
+		informationAudio.volume = 0.55;
+		function playInformationAudio() {
+			informationAudio.play();
+		}
+		//Same as first one
+		var contactAudio = document.querySelector("#contact")
+		contactAudio.volume = 0.55;
+		function playContactAudio() {
+			contactAudio.play();
+		}
+	</script>
 </body>
 </html>

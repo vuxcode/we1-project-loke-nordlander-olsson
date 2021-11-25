@@ -21,16 +21,26 @@
 		</div>
 	</div>
 	<!-- Div for elements in the sidebar, buttons -->
+	<!-- onmousover triggers a function that plays a sound -->
 	<div class="sidebar">
 		<div class="buttons">
 			<a href="#">
-				<button>Home</button>
+				<button onmouseover="playHomeAudio()">Home</button>
+				<audio id="home" preload="auto">
+					<source src="home.mp3">
+				</audio>
 			</a>
 			<a href="information.html">
-				<button>Information</button>
+				<button onmouseover="playInformationAudio()">Information</button>
+				<audio id="information">
+					<source src="information.mp3">
+				</audio>
 			</a>
 			<a href="contact.html">
-				<button href="contact.html">Contact Us</button>
+				<button onmouseover="playContactAudio()">Contact Us</button>
+				<audio id="contact" preload="auto">
+					<source src="contact.mp3">
+				</audio>
 			</a>
 		</div>
 	</div>
@@ -43,5 +53,27 @@
 		<img class="frontpageImages" src="cafe3.jpg" alt="diner">
 		<img class="frontpageImages bottomImage" src="cafe2.jpg" alt="50s chair">
 	</div>
+	<script type="text/javascript">
+		//Finds and sets this variable to the assigned id
+		var homeAudio = document.querySelector("#home");
+		//Lowers the audio by 25%
+		homeAudio.volume = 0.55;
+		//Function that plays the sound
+		function playHomeAudio() {
+			homeAudio.play();
+		}
+		//Same as above
+		var informationAudio = document.querySelector("#information");
+		informationAudio.volume = 0.55;
+		function playInformationAudio() {
+			informationAudio.play();
+		}
+
+		var contactAudio = document.querySelector("#contact")
+		contactAudio.volume = 0.55;
+		function playContactAudio() {
+			contactAudio.play();
+		}
+	</script>
 </body>
 </html>
