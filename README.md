@@ -15,6 +15,8 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 11/19 - It's frustrating to even try changing anything as the vision of the website gets worse and worse. I'm just frustrated with it. I don't believe I can continue until the issue has been fixed. It just gives me anxiety.
 
+11/25 - Just needed a short break to continue with this. It worked splendidly!
+
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here.
