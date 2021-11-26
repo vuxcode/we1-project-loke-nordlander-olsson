@@ -59,7 +59,6 @@ button {
 
 button:hover {
 	color: navajowhite;
-
 }
 
 button:visit {
@@ -183,4 +182,14 @@ iframe {
 
 .bottomImage {
 	margin-top: 1.98vw;
+}
+
+#textToSpeech {
+	display: flex;
+	justify-content: center;
+}
+
+/*Only affects the margin between the buttons, weird*/
+#ttsButtons {
+	font-size: 3vw;
 }

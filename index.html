@@ -53,27 +53,13 @@
 		<img class="frontpageImages" src="cafe3.jpg" alt="diner">
 		<img class="frontpageImages bottomImage" src="cafe2.jpg" alt="50s chair">
 	</div>
-	<script type="text/javascript">
-		//Finds and sets this variable to the assigned id
-		var homeAudio = document.querySelector("#home");
-		//Lowers the audio by 25%
-		homeAudio.volume = 0.55;
-		//Function that plays the sound
-		function playHomeAudio() {
-			homeAudio.play();
-		}
-		//Same as above
-		var informationAudio = document.querySelector("#information");
-		informationAudio.volume = 0.55;
-		function playInformationAudio() {
-			informationAudio.play();
-		}
-
-		var contactAudio = document.querySelector("#contact")
-		contactAudio.volume = 0.55;
-		function playContactAudio() {
-			contactAudio.play();
-		}
-	</script>
+	<!-- Div containing text-to-speech buttons, play and stop -->
+	<div id="textToSpeech">
+		<ul id="ttsButtons">
+			<button id="play">Read text</button>
+			<button id="stop">Stop speech</button>
+		</ul>
+	</div>
+	<script src="javascript.js"></script>
 </body>
 </html>
