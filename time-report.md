@@ -47,5 +47,10 @@ For example:
   - Added sound to when you hover over the sidebar buttons, in case you have bad eyesight or dyslexia
   - Added functions that correlate to the onmouseover for buttons
   - Added more comments to places where it was missing
-  - 
-Total time: 11 hours and 10 minutes
+
+- 2021-11-26 23:20 Worked for 2 hours and 30 minutes. I have done:
+  - Implemented buttons for text-to-speech that reads the article text out loud on every page
+  - Wrote the code for the javascript so the website starts and stops reading when clicking the corresponding buttons
+  - I put the javascript code in a separate file and each page refers to it correctly
+
+Total time: 13 hours and 40 minutes
