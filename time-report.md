@@ -59,4 +59,9 @@ For example:
   - Added audio element to each page
   - Tried to look up how to make a cookie and local/sessionStorage but had no success in understanding it
 
-Total time: 15 hours and 10 minutes
+- 2021-12-01 00:56 Worked for 1 hour and 30 minutes. I have done:
+  - Researched the issue, Internet Explorer can't check localStorage which is null or undefined
+  - Spent most of the time testing different approaches
+  - Turned the disabling of TTS into a function
+
+Total time: 16 hours and 40 minutes
