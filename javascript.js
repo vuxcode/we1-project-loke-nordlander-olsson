@@ -1,7 +1,6 @@
 		//Finds and sets this variable to the assigned id
 		var homeAudio = document.querySelector("#home");
 
-		var speaking = false;
 		//Lowers the audio by 25%
 		homeAudio.volume = 0.55;
 		//Function that plays the descriptive sound
@@ -21,8 +20,12 @@
 			contactAudio.play();
 		}
 
+		//Used in the else statement so it doesn't appear twice, deprecated
+		var ttsErrorAppeared = false;
+
 		//When the page is loaded, this function is triggered
 		onload = function() {
+			document.cookie = "visited=yes";
 			//If the website supports text-to-speech, it will trigger this
 			if ('speechSynthesis' in window) {
 				//Outputs in console log that it supports TTS
@@ -92,7 +95,17 @@
 				}
 			}
 			//If TTS isn't functional in the browser then it alerts the user
+			//I've tried using localStorage and cookies to not make it appear twice
 			else {
-				alert("This browser does not support text to speech!");
+				if (!ttsErrorAppeared) {
+					var ttsError = document.querySelector("#ttsError");
+					var ttsPlay = document.querySelector("#play");
+					var ttsStop = document.querySelector("#stop");
+					ttsError.play();
+					ttsErrorAppeared = true;
+					ttsPlay.style.display = "none";
+					ttsStop.style.display = "none";
+					alert("This browser does not support text to speech!");
+				}
 			}
 		}
