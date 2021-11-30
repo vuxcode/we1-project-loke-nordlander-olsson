@@ -20,12 +20,35 @@
 			contactAudio.play();
 		}
 
-		//Used in the else statement so it doesn't appear twice, deprecated
-		var ttsErrorAppeared = false;
+		//Function that checks if the person has visited the website before
+		function firstVisitCheck() {
+			//If "firstVisit" with value no exists in sessionStorage,
+			//triggers return and stops
+			//Does not work correctly in IE
+			if (sessionStorage.getItem("firstVisit") == "no") {
+				//Returns this message
+				return "User has returned";
+			}
+			else {
+				//Each of these vars finds the id's associated with those elements
+				var ttsError = document.querySelector("#ttsError");
+				var ttsPlay = document.querySelector("#play");
+				var ttsStop = document.querySelector("#stop");
+				//Plays a sound to inform that the user can
+				ttsError.play();
+				//Tells each style of these elements to not display
+				ttsPlay.style.display = "none";
+				ttsStop.style.display = "none";
+				//Alerts the user that it does not support TTS
+				alert("This browser does not support text to speech!");
+				//Sets firstvisit and the value no for sessionStorage
+				//This is only saved for the current browser session
+				sessionStorage.setItem("firstVisit", "no");
+			}
+		}
 
 		//When the page is loaded, this function is triggered
 		onload = function() {
-			document.cookie = "visited=yes";
 			//If the website supports text-to-speech, it will trigger this
 			if ('speechSynthesis' in window) {
 				//Outputs in console log that it supports TTS
@@ -97,15 +120,6 @@
 			//If TTS isn't functional in the browser then it alerts the user
 			//I've tried using localStorage and cookies to not make it appear twice
 			else {
-				if (!ttsErrorAppeared) {
-					var ttsError = document.querySelector("#ttsError");
-					var ttsPlay = document.querySelector("#play");
-					var ttsStop = document.querySelector("#stop");
-					ttsError.play();
-					ttsErrorAppeared = true;
-					ttsPlay.style.display = "none";
-					ttsStop.style.display = "none";
-					alert("This browser does not support text to speech!");
-				}
+				firstVisitCheck();
 			}
 		}
