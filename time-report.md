@@ -53,4 +53,10 @@ For example:
   - Wrote the code for the javascript so the website starts and stops reading when clicking the corresponding buttons
   - I put the javascript code in a separate file and each page refers to it correctly
 
-Total time: 13 hours and 40 minutes
+- 2021-11-30 23:14 Worked for 1 hour and 30 minutes. I have done:
+  - TTS buttons do not appear anymore if the browser does not support text-to-speech
+  - Added sound that also plays after what I previously mentioned
+  - Added audio element to each page
+  - Tried to look up how to make a cookie and local/sessionStorage but had no success in understanding it
+
+Total time: 15 hours and 10 minutes
