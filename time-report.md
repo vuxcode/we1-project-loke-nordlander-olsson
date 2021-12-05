@@ -63,5 +63,10 @@ For example:
   - Researched the issue, Internet Explorer can't check localStorage which is null or undefined
   - Spent most of the time testing different approaches
   - Turned the disabling of TTS into a function
+- 2021-12-05 10:19 Worked for 1 hour and 10 minutes. I have done:
+  - Added comments to most things in the Cascading Style Sheet.
+  - Fixed the CSS property of buttons so they could be set to different font-sizes. 
+  - Added id to the sidebar buttons.
+  - Cleaned up the CSS properties a bit. Removed unnecessary ones.
 
-Total time: 16 hours and 40 minutes
+Total time: 17 hours and 50 minutes
