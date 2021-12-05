@@ -1,13 +1,26 @@
+/*The star symbol involves every element in the affected files.*/
+/*Margin and padding is set to 0 because it makes every element appear at*/
+/*the upper left corner of the page. It becomes easier to arrange everything.*/
+/*Font-family decides which font and style to use.*/
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Pacifico', cursive;
 }
 
+/*Background color is set to a specific hex code.*/
+/*Overflow-y is what happens to an element if content inside of it gets*/
+/*oveflowed on the top and bottom. It is set to auto and will automatically*/
+/*choose the best option.*/
 body {
 	background-color: #f3e5ab;
+	overflow-y: auto;
 }
 
+/*Border-bottom is set to a ridge which is how the bottom of the border is*/
+/*styled. Border-width is the thickness. Color is self explanatory.*/
+/*Width is set to 100%, which means that it will cover 100% of the horizontal*/
+/*line.*/
 .top {
 	background-color: #89CFF0;
 	border-bottom: ridge;
@@ -15,12 +28,23 @@ body {
 	border-color: black;
 	width: 100%;
 }
+
+/*Logo is the element with the image in the upper left corner.*/
+/*Padding means how much emty space is put inside of the element relating*/
+/*to the content. Margin is how much space is set between itself and*/
+/*adjacent elements.*/
 .logo {
 	padding: 10px;
 	display: inline-block;
 	margin: auto;
+	width: 17vw;
 }
 
+/*Display inline-block means that it will be a block that displays in the same*/
+/*line as previous element. It will still be considered a block.*/
+/*Text-decoration decides what kind of "additions" will be added to the text.*/
+/*Margin left decides how much space from the left side there is. Same*/
+/*for bottom.*/
 .pageInfo {
 	display: inline-block;
 	text-decoration: underline;
@@ -28,6 +52,10 @@ body {
 	margin-bottom: 10px;
 }
 
+/*Height is 100% and should be seen as covering from top to bottom in the*/
+/*vertical line. Width is based on viewpoint width which means how*/
+/*much percentage of the page it takes up. W being width.*/
+/*Position absolute means that it isn't affected by other elements.*/
 .sidebar {
 	height: 100%;
 	width: 13vw;
@@ -43,11 +71,13 @@ body {
 .buttons {
 	margin-top: 10px;
 	margin-left: 11px;
-	display: block;
 }
 
+/*Border-radius means how much the element will be rounded.*/
+/*Border-style is how the border will look, its style.*/
+/*The cursor property is how the mousepointer will look when hovering over*/
+/*the element.*/
 button {
-	font-size: 2vw;
 	margin-top: 0.5vw;
 	padding: 0.5vw;
 	border-radius: 10px;
@@ -57,18 +87,17 @@ button {
 	cursor: pointer;
 }
 
+/*What color the text in the button will have when hovering over it.*/
 button:hover {
 	color: navajowhite;
 }
 
-button:visit {
-	color: black;
-}
-
+/*What color the text in the button will have when clicking it.*/
 button:active {
 	color: blue;
 }
 
+/*Article, contains the base information for the page.*/
 .article {
 	margin-left: 14vw;
 	margin-top: 0.5vw;
@@ -78,6 +107,7 @@ button:active {
 	width: 63vw;
 }
 
+/*Below are different text elements and their font-sizes.*/
 h1 {
 	font-size: 4vw;
 }
@@ -90,6 +120,10 @@ p {
 	font-size: 1.5vw;
 }
 
+/*Transition ease-in-out means how long it takes for the element to expand*/
+/*and retract. Line-height is how much space there is between lines of text.*/
+/*However it is used to remove the gap on the bottom of the image for this*/
+/*element when using borders.*/
 .menu {
 	margin-left: auto;
 	margin-right: auto;
@@ -102,23 +136,20 @@ p {
 	line-height: 0;
 }
 
+/*Transform scale means how much the image will increase in size when hovered*/
+/*over. In this case it will double in size.*/
 .menu:hover {
 	transform: scale(2.0);
 }
 
+/*Every image element is set to 100% which means it won't scale up depending*/
+/*the size of the page. It will only scale down.*/
 img {
 	width: 100%;
 }
 
-video {
-	margin-left: auto;
-	margin-right: auto;
-	width: 47vw;
-	display: inline;
-}
-
-.logo {
-	width: 17vw;
+form {
+	display: block;
 }
 
 legend {
@@ -130,6 +161,7 @@ fieldset {
 	margin-right: auto;
 }
 
+/*Label is set to display so email-input appears under it.*/
 label {
 	display: block;
 	margin-left: 1vw;
@@ -140,10 +172,10 @@ textarea {
 }
 
 form {
-	padding: 1vw;
 	background-color: navajowhite;
 }
 
+/*The button for which to send in the form.*/
 #submit {
 	font-size: 1.5vw;
 	padding: 0.5vw;
@@ -190,10 +222,12 @@ iframe {
 }
 
 /*Only affects the margin between the buttons, weird*/
-#ttsButtons {
+#play, #stop {
 	font-size: 3vw;
 }
 
-/*Note to self, probably best to start from the beginning for the css file.*/
-/*I can then make the necessary changes I wanna make while also making the*/
-/*website look much better and semantic.*/
+#sidebarButton {
+	font-size: 2vw;
+	display: flex;
+	justify-content: center;
+}
