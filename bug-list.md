@@ -9,4 +9,4 @@ Fixed:
 
 Unfixable:
 1. Problem: Internet Explorer can not read getItem if it is null or undefined so the function for removing buttons does not work. This is more an issue with IE and not with the website.
-2. Problem: The sidebar is not displayed correctly at all times. Not covering from top to bottom. (Tried both 100% and 100vh) It was fixed by adding overflow-y: scroll to the main element that I just added.
+2. Problem: The sidebar is not displayed correctly at all times. Not covering from top to bottom. (Tried both 100% and 100vh) It was fixed by adding overflow-y: scroll to the main element that I just added. I also added overflow-y: hidden to sidebar to make it work.
