@@ -44,35 +44,37 @@
 			</a>
 		</div>
 	</div>
-	<div class="article">
-		<h2>Below is a form you can fill in that will be sent to one of our representatives</h2>
-		<!-- Below is a form that is linked to a service -->
-		<!-- Clicking send will send your input to the service and respectively an email -->
-		<form action="https://formspree.io/f/mgerjzkl" method="POST">
-			<fieldset>
-				<!-- Text at the top of the form, description -->
-				<legend>Contact us</legend>
-				<!-- A label for the textarea below -->
-				<label for="text"><u>Reason for contacting us:</u></label>
-				<!-- Textarea where you input the reason for contacting
-				It has 5 rows of text -->
-				<textarea id="text" name="text" rows="5"></textarea>
-				<!-- A label for the email area-->
-				<label for="email"><u>Your email...</u></label>
-				<!-- Element where you input your email -->
-				<input id="email" type="email" name="email">
-			</fieldset>
-			<!-- This element/button will send the email through the service provider -->
-			<input id="submit" type="submit" value="Send">
-		</form>
-	</div>
-	<!-- Div containing text-to-speech buttons, play and stop -->
-	<div id="textToSpeech">
-		<ul id="ttsButtons">
-			<button id="play">Read text</button>
-			<button id="stop">Stop speech</button>
-		</ul>
-	</div>
+	<main>
+		<div class="article">
+			<h2>Below is a form you can fill in that will be sent to one of our representatives</h2>
+			<!-- Below is a form that is linked to a service -->
+			<!-- Clicking send will send your input to the service and respectively an email -->
+			<form action="https://formspree.io/f/mgerjzkl" method="POST">
+				<fieldset>
+					<!-- Text at the top of the form, description -->
+					<legend>Contact us</legend>
+					<!-- A label for the textarea below -->
+					<label for="text"><u>Reason for contacting us:</u></label>
+					<!-- Textarea where you input the reason for contacting
+					It has 5 rows of text -->
+					<textarea id="text" name="text" rows="5"></textarea>
+					<!-- A label for the email area-->
+					<label for="email"><u>Your email...</u></label>
+					<!-- Element where you input your email -->
+					<input id="email" type="email" name="email">
+				</fieldset>
+				<!-- This element/button will send the email through the service provider -->
+				<input id="submit" type="submit" value="Send">
+			</form>
+		</div>
+		<!-- Div containing text-to-speech buttons, play and stop -->
+		<div id="textToSpeech">
+			<ul id="ttsButtons">
+				<button id="play">Read text</button>
+				<button id="stop">Stop speech</button>
+			</ul>
+		</div>
+	</main>
 	<!-- Audio that is triggered by the else line in javascript.js -->
 	<audio id="ttsError" src="ttsError.mp3"></audio>
 	<script src="javascript.js"></script>

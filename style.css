@@ -11,10 +11,23 @@
 /*Background color is set to a specific hex code.*/
 /*Overflow-y is what happens to an element if content inside of it gets*/
 /*oveflowed on the top and bottom. It is set to auto and will automatically*/
-/*choose the best option.*/
-body {
+/*choose the best option. Has been removed.*/
+html, body {
 	background-color: #f3e5ab;
-	overflow-y: auto;
+	height: 100%;
+}
+
+/*Overflow-y will make the element have a scrollbar.*/
+/*Height is 100% which will cover top to bottom.*/
+main {
+	overflow-y: scroll;
+	height: 100%;
+	width: fit-content;
+}
+
+/*Hides the scrollbar of main*/
+main::-webkit-scrollbar, html::-webkit-scrollbar {
+	display: none;
 }
 
 /*Border-bottom is set to a ridge which is how the bottom of the border is*/
@@ -63,9 +76,8 @@ body {
 	position: absolute;
 	border-right: ridge;
 	border-width: 3px;
-	border-bottom-right-radius: 23px;
-	border-bottom: ridge;
 	border-color: black;
+	overflow-y: hidden;
 }
 
 .buttons {
@@ -216,9 +228,12 @@ iframe {
 	margin-top: 1.98vw;
 }
 
+/*Flex is used in conjunction with justify-content to make the*/
+/*buttons appear next to eachother.*/
 #textToSpeech {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 50px;
 }
 
 /*Only affects the margin between the buttons, weird*/
