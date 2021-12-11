@@ -75,4 +75,12 @@ For example:
   - Added main wrapper above article, anything that isn't top or sidebar is included in this
   - Added additional comments
 
-Total time: 19 hours and 10 minutes
+- 2021-12-11 12:42 Worked for 2 hours and 10 minutes. I have done:
+  - Removed the sidebar buttons and styled the anchors instead
+  - Removed the unordered lists, failed validation
+  - Added meta lang="en" for validation
+  - Added @media screen and max-width to make screens with the max width of 768 pixels be more responsive
+  - Fixed up the Cascading Style Sheet code related to buttons and anchors
+  - Added further comments
+
+Total time: 21 hours and 20 minutes
