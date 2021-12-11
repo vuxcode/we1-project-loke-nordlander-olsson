@@ -25,9 +25,58 @@ main {
 	width: fit-content;
 }
 
-/*Hides the scrollbar of main*/
+/*Hides the scrollbar of main and html.*/
+/*I did this because in my opinion it looks better.*/
+/*This is not compatible with every browser but it works in Chrome, Edge and*/
+/*Opera plus others.*/
 main::-webkit-scrollbar, html::-webkit-scrollbar {
 	display: none;
+}
+
+/*The @media screen and max-width will only affect the website if the width*/
+/*value is equal to or lower than 768px. The ones marked with !important*/
+/*will replace earlier values.*/
+@media screen and (max-width: 768px) {
+	.article {
+		width: 76.5vw !important;
+		margin-left: 21vw !important;
+	}
+
+	p {
+		font-size: 3vw !important;
+	}
+
+	h1 {
+		font-size: 6vw !important;
+	}
+
+	h2 {
+		font-size: 4.5vw !important;
+	}
+
+	#play, #stop {
+		font-size: 5vw !important;
+	}
+
+	#textToSpeech {
+		margin-left: 22vw !important;
+	}
+
+	.sidebar {
+		width: 20vw !important;
+	}
+
+	#sidebarButton {
+		font-size: 3.3vw !important;
+	}
+
+	.frontpageImages {
+		width: 36vw !important;
+	}
+
+	#submit {
+		font-size: 4vw !important;
+	}
 }
 
 /*Border-bottom is set to a ridge which is how the bottom of the border is*/
@@ -82,30 +131,34 @@ main::-webkit-scrollbar, html::-webkit-scrollbar {
 
 .buttons {
 	margin-top: 10px;
-	margin-left: 11px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /*Border-radius means how much the element will be rounded.*/
 /*Border-style is how the border will look, its style.*/
 /*The cursor property is how the mousepointer will look when hovering over*/
 /*the element.*/
-button {
+a, button {
 	margin-top: 0.5vw;
 	padding: 0.5vw;
 	border-radius: 10px;
 	background-color: #89CFF0;
 	border-style: double;
 	border-width: 7px;
+	border-color: black;
 	cursor: pointer;
+	color: black;
 }
 
-/*What color the text in the button will have when hovering over it.*/
-button:hover {
+/*What color the text in these elements will have when hovering over them.*/
+a:hover, button:hover, #submit:hover {
 	color: navajowhite;
 }
 
-/*What color the text in the button will have when clicking it.*/
-button:active {
+/*What color the text in the elements will have when clicking them.*/
+a:active, button:active, #submit:active {
 	color: blue;
 }
 
@@ -155,13 +208,15 @@ p {
 }
 
 /*Every image element is set to 100% which means it won't scale up depending*/
-/*the size of the page. It will only scale down.*/
+/*on the size of the page. It will only scale down.*/
 img {
 	width: 100%;
 }
 
 form {
 	display: block;
+	background-color: navajowhite;
+	padding: 10px;
 }
 
 legend {
@@ -183,10 +238,6 @@ textarea {
 	width: 60vw;
 }
 
-form {
-	background-color: navajowhite;
-}
-
 /*The button for which to send in the form.*/
 #submit {
 	font-size: 1.5vw;
@@ -194,6 +245,7 @@ form {
 	margin-top: 0.2vw;
 	border-radius: 10px;
 	border-style: double;
+	border-color: black;
 	border-width: 7px;
 	color: black;
 	background-color: #89CFF0;
@@ -217,32 +269,37 @@ iframe {
 	border-radius: 6px;
 }
 
+/*I used inline to display on the same line and float to make the images*/
+/*appear next to eachother*/
 .frontpageImages {
 	width: 30vw;
 	display: inline;
 	float: left;
+	clear: right;
 	margin: 0.3vw;
 }
 
+/*Added margin to distance the 3rd image from the overarching one*/
 .bottomImage {
 	margin-top: 1.98vw;
 }
 
 /*Flex is used in conjunction with justify-content to make the*/
-/*buttons appear next to eachother.*/
+/*buttons appear next to eachother*/
 #textToSpeech {
-	display: flex;
-	justify-content: center;
+	margin-left: 30.5vw;
 	padding-bottom: 50px;
 }
 
-/*Only affects the margin between the buttons, weird*/
+/*Play and stop buttons, font size relative to the viewport width*/
 #play, #stop {
 	font-size: 3vw;
 }
 
-#sidebarButton {
+/*The buttons of the sidebar*/
+/*Justify content and display flex is for centering the buttons inside the div*/
+.sidebarButton {
 	font-size: 2vw;
-	display: flex;
 	justify-content: center;
+	display: flex;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<!-- Which page you're on -->
 	<title>Homepage</title>
 	<!-- Font gathered from Google fonts -->
@@ -22,26 +22,21 @@
 	</div>
 	<!-- Div for elements in the sidebar, buttons -->
 	<!-- onmousover triggers a function that plays a sound -->
+	<!-- Audio is also store here that will play when hovering over the anchors -->
 	<div class="sidebar">
 		<div class="buttons">
-			<a href="#">
-				<button id="sidebarButton" onmouseover="playHomeAudio()">Home</button>
-				<audio id="home" preload="auto">
-					<source src="home.mp3">
-				</audio>
-			</a>
-			<a href="information.html">
-				<button id="sidebarButton" onmouseover="playInformationAudio()">Information</button>
-				<audio id="information">
-					<source src="information.mp3">
-				</audio>
-			</a>
-			<a href="contact.html">
-				<button id="sidebarButton" onmouseover="playContactAudio()">Contact Us</button>
-				<audio id="contact" preload="auto">
-					<source src="contact.mp3">
-				</audio>
-			</a>
+			<a href="#" class="sidebarButton" onmouseover="playHomeAudio()">Home</a>
+			<audio id="home" preload="auto">
+				<source src="home.mp3">
+			</audio>
+			<a href="information.html" class="sidebarButton" onmouseover="playInformationAudio()">Information</a>
+			<audio id="information">
+				<source src="information.mp3">
+			</audio>
+			<a href="contact.html" class="sidebarButton" onmouseover="playContactAudio()">Contact Us</a>
+			<audio id="contact" preload="auto">
+				<source src="contact.mp3">
+			</audio>
 		</div>
 	</div>
 	<main>
@@ -56,10 +51,8 @@
 		</div>
 		<!-- Div containing text-to-speech buttons, play and stop -->
 		<div id="textToSpeech">
-			<ul id="ttsButtons">
-				<button id="play">Read text</button>
-				<button id="stop">Stop speech</button>
-			</ul>
+			<button id="play">Read text</button>
+			<button id="stop">Stop speech</button>
 		</div>
 	</main>
 	<!-- Audio that is triggered by the else line in javascript.js -->
