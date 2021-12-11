@@ -17,6 +17,8 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 11/25 - Just needed a short break to continue with this. It worked splendidly!
 
+12/11 - I have accomplished everything on the checklist and there is not much that needs to be added, if at all.
+
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here.
