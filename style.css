@@ -36,7 +36,7 @@ main::-webkit-scrollbar, html::-webkit-scrollbar {
 /*The @media screen and max-width will only affect the website if the width*/
 /*value is equal to or lower than 768px. The ones marked with !important*/
 /*will replace earlier values.*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
 	.article {
 		width: 76.5vw !important;
 		margin-left: 21vw !important;
