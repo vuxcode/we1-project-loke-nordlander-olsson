@@ -35,7 +35,7 @@ main::-webkit-scrollbar, html::-webkit-scrollbar {
 
 /*The @media screen and max-width will only affect the website if the width*/
 /*value is equal to or lower than 768px. The ones marked with !important*/
-/*will replace earlier values.*/
+/*will replace earlier values, otherwise nothing will change.*/
 @media screen and (max-width: 768px) {
 	.article {
 		width: 76.5vw !important;
@@ -66,7 +66,7 @@ main::-webkit-scrollbar, html::-webkit-scrollbar {
 		width: 20vw !important;
 	}
 
-	#sidebarButton {
+	.sidebarButton {
 		font-size: 3.3vw !important;
 	}
 
@@ -129,6 +129,9 @@ main::-webkit-scrollbar, html::-webkit-scrollbar {
 	overflow-y: hidden;
 }
 
+/*How the buttons are arranged inside the sidebar.*/
+/*Flex is used here to make the items appear in the middle of the div and*/
+/*as a column. Vertical.*/
 .buttons {
 	margin-top: 10px;
 	display: flex;
@@ -240,7 +243,7 @@ textarea {
 
 /*The button for which to send in the form.*/
 #submit {
-	font-size: 1.5vw;
+	font-size: 1.7vw;
 	padding: 0.5vw;
 	margin-top: 0.2vw;
 	border-radius: 10px;
@@ -249,6 +252,7 @@ textarea {
 	border-width: 7px;
 	color: black;
 	background-color: #89CFF0;
+	cursor: pointer;
 }
 
 #text, #email {
@@ -262,6 +266,7 @@ textarea {
 	margin-bottom: 1vw;
 }
 
+/*The look of the iframe, the map visible on information page*/
 iframe {
 	width: 100%;
 	height: 30vh;
@@ -270,7 +275,8 @@ iframe {
 }
 
 /*I used inline to display on the same line and float to make the images*/
-/*appear next to eachother*/
+/*appear next to eachother. Clear right to fix so floated elements can't*/
+/*on that side.*/
 .frontpageImages {
 	width: 30vw;
 	display: inline;
