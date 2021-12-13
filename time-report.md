@@ -83,4 +83,9 @@ For example:
   - Fixed up the Cascading Style Sheet code related to buttons and anchors
   - Added further comments
 
-Total time: 21 hours and 20 minutes
+- 2021-12-13 12:24 Worked for 1 hour and 10 minutes. I have done:
+  - Fixed submit button not having a pointer cursor
+  - Fixed sidebar buttons not scaling from @media, accidentally used id instead of class in CSS
+  - Added further comments describing the site
+
+Total time: 22 hours and 30 minutes
