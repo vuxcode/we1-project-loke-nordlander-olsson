@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- Which page you're on -->
-	<title>Homepage</title>
+	<title>Information</title>
 	<!-- Font gathered from Google fonts -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 			<img src="logo.png" alt="logo.png">
 		</div>
 		<div class="pageInfo">
-			<h1>Homepage</h1>
+			<h1>Information</h1>
 		</div>
 	</div>
 	<!-- Div for elements in the sidebar, buttons -->
@@ -27,11 +27,11 @@
 	<!-- Audio is also store here that will play when hovering over the anchors -->
 	<div class="sidebar">
 		<div class="buttons">
-			<a href="#" class="sidebarButton" onmouseover="playHomeAudio()">Home</a>
+			<a href="index.html" class="sidebarButton" onmouseover="playHomeAudio()">Home</a>
 			<audio id="home" preload="auto">
 				<source src="home.mp3">
 			</audio>
-			<a href="information.html" class="sidebarButton" onmouseover="playInformationAudio()">Information</a>
+			<a href="#" class="sidebarButton" onmouseover="playInformationAudio()">Information</a>
 			<audio id="information">
 				<source src="information.mp3">
 			</audio>
@@ -44,12 +44,15 @@
 	<main>
 		<!-- Div that contains basic info and an image -->
 		<div class="article">
-			<h2>Welcome to the homepage for Best In Town</h2>
-			<p>We are a restaurant situated in Boston aiming to invoke the 50s vibe for our customers.<br>On the left there are some links to further get to know our establishment.<br>There is also a way to contact us in case you're looking for work or have any questions.</p>
-			<!-- Different images displayed on the frontpage -->
-			<img class="frontpageImages" src="cafe1.jpg" alt="cafe">
-			<img class="frontpageImages" src="cafe3.jpg" alt="diner">
-			<img class="frontpageImages bottomImage" src="cafe2.jpg" alt="50s chair">
+			<h2>What we're about</h2>
+			<p>Our cafe is all about serving up the best 50s experience you can have.<br>All in a neat package that will certainly remind you of the rocking 50s.<br>We offer everything from grounded coffee to cakes and muffins baked like it was made 70 years ago.<br>Oh and in case you were wondering, we also have a jukebox with music from 'The Chordettes', Elvis Presley, Buddy Holly and much much more!</p>
+			<p>Below is a map where you can see the location of our business.</p>
+			<!-- Element that displays a certain location in google maps -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.120599134112!2d-73.94897338453245!3d40.62722227934117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244adee855df9%3A0x966c03fcd184e8c8!2s2361%20Nostrand%20Ave.%2C%20Brooklyn%2C%20NY%2011210%2C%20USA!5e0!3m2!1sen!2sse!4v1636138194151!5m2!1sen!2sse" width="600" height="666" loading="lazy"></iframe>
+			<p>Below is an example of some of the products available from our menu. Hover over it or tap if you're on phone to zoom in.</p>
+			<div class="menu">
+				<img src="menu.jpg" alt="restaurantMenu">
+			</div>
 		</div>
 		<!-- Div containing text-to-speech buttons, play and stop -->
 		<div id="textToSpeech">

@@ -1,0 +1,311 @@
+/*The star symbol involves every element in the affected files.*/
+/*Margin and padding is set to 0 because it makes every element appear at*/
+/*the upper left corner of the page. It becomes easier to arrange everything.*/
+/*Font-family decides which font and style to use.*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Pacifico', cursive;
+}
+
+/*Background color is set to a specific hex code.*/
+/*Overflow-y is what happens to an element if content inside of it gets*/
+/*oveflowed on the top and bottom. It is set to auto and will automatically*/
+/*choose the best option. Has been removed.*/
+html, body {
+	background-color: #f3e5ab;
+	height: 100%;
+}
+
+/*Overflow-y will make the element have a scrollbar.*/
+/*Height is 100% which will cover top to bottom.*/
+main {
+	overflow-y: scroll;
+	height: 100%;
+	width: fit-content;
+}
+
+/*Hides the scrollbar of main and html.*/
+/*I did this because in my opinion it looks better.*/
+/*This is not compatible with every browser but it works in Chrome, Edge and*/
+/*Opera plus others.*/
+main::-webkit-scrollbar, html::-webkit-scrollbar {
+	display: none;
+}
+
+/*The @media screen and max-width will only affect the website if the width*/
+/*value is equal to or lower than 768px. The ones marked with !important*/
+/*will replace earlier values, otherwise nothing will change.*/
+@media screen and (max-width: 768px) {
+	.article {
+		width: 76.5vw !important;
+		margin-left: 21vw !important;
+	}
+
+	p {
+		font-size: 3vw !important;
+	}
+
+	h1 {
+		font-size: 6vw !important;
+	}
+
+	h2 {
+		font-size: 4.5vw !important;
+	}
+
+	#play, #stop {
+		font-size: 5vw !important;
+	}
+
+	#textToSpeech {
+		margin-left: 22vw !important;
+	}
+
+	.sidebar {
+		width: 20vw !important;
+	}
+
+	.sidebarButton {
+		font-size: 3.3vw !important;
+	}
+
+	.frontpageImages {
+		width: 36vw !important;
+	}
+
+	#submit {
+		font-size: 4vw !important;
+	}
+}
+
+/*Border-bottom is set to a ridge which is how the bottom of the border is*/
+/*styled. Border-width is the thickness. Color is self explanatory.*/
+/*Width is set to 100%, which means that it will cover 100% of the horizontal*/
+/*line.*/
+.top {
+	background-color: #89CFF0;
+	border-bottom: ridge;
+	border-width: 4px;
+	border-color: black;
+	width: 100%;
+}
+
+/*Logo is the element with the image in the upper left corner.*/
+/*Padding means how much emty space is put inside of the element relating*/
+/*to the content. Margin is how much space is set between itself and*/
+/*adjacent elements.*/
+.logo {
+	padding: 10px;
+	display: inline-block;
+	margin: auto;
+	width: 17vw;
+}
+
+/*Display inline-block means that it will be a block that displays in the same*/
+/*line as previous element. It will still be considered a block.*/
+/*Text-decoration decides what kind of "additions" will be added to the text.*/
+/*Margin left decides how much space from the left side there is. Same*/
+/*for bottom.*/
+.pageInfo {
+	display: inline-block;
+	text-decoration: underline;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/*Height is 100% and should be seen as covering from top to bottom in the*/
+/*vertical line. Width is based on viewpoint width which means how*/
+/*much percentage of the page it takes up. W being width.*/
+/*Position absolute means that it isn't affected by other elements.*/
+.sidebar {
+	height: 100%;
+	width: 13vw;
+	background-color: #E58282;
+	position: absolute;
+	border-right: ridge;
+	border-width: 3px;
+	border-color: black;
+	overflow-y: hidden;
+}
+
+/*How the buttons are arranged inside the sidebar.*/
+/*Flex is used here to make the items appear in the middle of the div and*/
+/*as a column. Vertical.*/
+.buttons {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Border-radius means how much the element will be rounded.*/
+/*Border-style is how the border will look, its style.*/
+/*The cursor property is how the mousepointer will look when hovering over*/
+/*the element.*/
+a, button {
+	margin-top: 0.5vw;
+	padding: 0.5vw;
+	border-radius: 10px;
+	background-color: #89CFF0;
+	border-style: double;
+	border-width: 7px;
+	border-color: black;
+	cursor: pointer;
+	color: black;
+}
+
+/*What color the text in these elements will have when hovering over them.*/
+a:hover, button:hover, #submit:hover {
+	color: navajowhite;
+}
+
+/*What color the text in the elements will have when clicking them.*/
+a:active, button:active, #submit:active {
+	color: blue;
+}
+
+/*Article, contains the base information for the page.*/
+.article {
+	margin-left: 14vw;
+	margin-top: 0.5vw;
+	border-style: ridge;
+	padding: 0.5vw;
+	display: inline-block;
+	width: 63vw;
+}
+
+/*Below are different text elements and their font-sizes.*/
+h1 {
+	font-size: 4vw;
+}
+
+h2 {
+	font-size: 2.5vw;
+}
+
+p {
+	font-size: 1.5vw;
+}
+
+/*Transition ease-in-out means how long it takes for the element to expand*/
+/*and retract. Line-height is how much space there is between lines of text.*/
+/*However it is used to remove the gap on the bottom of the image for this*/
+/*element when using borders.*/
+.menu {
+	margin-left: auto;
+	margin-right: auto;
+	border-style: dotted;
+	display: block;
+	width: 40%;
+	transition: ease-in-out 0.5s;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 0;
+}
+
+/*Transform scale means how much the image will increase in size when hovered*/
+/*over. In this case it will double in size.*/
+.menu:hover {
+	transform: scale(2.0);
+}
+
+/*Every image element is set to 100% which means it won't scale up depending*/
+/*on the size of the page. It will only scale down.*/
+img {
+	width: 100%;
+}
+
+form {
+	display: block;
+	background-color: navajowhite;
+	padding: 10px;
+}
+
+legend {
+	font-size: 2.5vw;
+}
+
+fieldset {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Label is set to display so email-input appears under it.*/
+label {
+	display: block;
+	margin-left: 1vw;
+}
+
+textarea {
+	width: 60vw;
+}
+
+/*The button for which to send in the form.*/
+#submit {
+	font-size: 1.7vw;
+	padding: 0.5vw;
+	margin-top: 0.2vw;
+	border-radius: 10px;
+	border-style: double;
+	border-color: black;
+	border-width: 7px;
+	color: black;
+	background-color: #89CFF0;
+	cursor: pointer;
+}
+
+#text, #email {
+	margin-left: 1vw;
+	border-style: double;
+	border-width: 5px;
+	border-color: #E58282;
+}
+
+#email {
+	margin-bottom: 1vw;
+}
+
+/*The look of the iframe, the map visible on information page*/
+iframe {
+	width: 100%;
+	height: 30vh;
+	border-style: solid;
+	border-radius: 6px;
+}
+
+/*I used inline to display on the same line and float to make the images*/
+/*appear next to eachother. Clear right to fix so floated elements can't*/
+/*on that side.*/
+.frontpageImages {
+	width: 30vw;
+	display: inline;
+	float: left;
+	clear: right;
+	margin: 0.3vw;
+}
+
+/*Added margin to distance the 3rd image from the overarching one*/
+.bottomImage {
+	margin-top: 1.98vw;
+}
+
+/*Flex is used in conjunction with justify-content to make the*/
+/*buttons appear next to eachother*/
+#textToSpeech {
+	margin-left: 30.5vw;
+	padding-bottom: 50px;
+}
+
+/*Play and stop buttons, font size relative to the viewport width*/
+#play, #stop {
+	font-size: 3vw;
+}
+
+/*The buttons of the sidebar*/
+/*Justify content and display flex is for centering the buttons inside the div*/
+.sidebarButton {
+	font-size: 2vw;
+	justify-content: center;
+	display: flex;
+}
